@@ -6,7 +6,7 @@ This clock generator is realized in SystemC as well as the testbench. The top le
 also is setting up a trace to dump a VCD-file.
 
 ## Special Notes
-
+* Verilator version used: 4.015
 * SystemC built on Linux from original reference sources by accelera.org
 * There are two bash scripts, one for SystemC Version 2.2 and one for System C Version 2.3, which generate a trace dump in "trace.vcd".
 If you want to run them, don't forget to ajust the environment variables according your systemc installation.
