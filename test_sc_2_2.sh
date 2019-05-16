@@ -7,4 +7,4 @@ export CXXFLAGS="-std=gnu++11"
 verilator -Wall -trace -sc --clk i_clk test.v --exe sc_main.cpp
 make -j -C obj_dir/ -f Vtest.mk Vtest
 ./obj_dir/Vtest
-#gtkwave trace.vcd
+#gtkwave trace.gtkw
