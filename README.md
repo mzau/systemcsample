@@ -16,4 +16,4 @@ properly producing a trace. You may view it with
 <pre>gtkwave test.gtkw</pre>
 but (don't forget to delete obj_dir)
 <pre>test_sc_2_3.sh  # using SystemC 2.3.3</pre>
-also is running seamlessly, but thre produced trace.vcd doesn't contain trace data!
+also is running seamlessly, but the produced trace.vcd doesn't contain trace data!
