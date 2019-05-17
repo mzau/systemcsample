@@ -1,8 +1,8 @@
 #!/bin/sh
-# link with CMAKE'ed systemc
-export SYSTEMC_HOME=/opt/systemc
-export SYSTEMC_LIBDIR=/opt/systemc/lib
-export SYSTEMC_INCLUDE=/opt/systemc/include
+# link with configure'ed systemc
+export SYSTEMC_HOME=/opt/systemc-2.3.3
+export SYSTEMC_LIBDIR=/opt/systemc-2.3.3/lib-linux64
+export SYSTEMC_INCLUDE=/opt/systemc-2.3.3/include
 export LD_LIBRARY_PATH=$SYSTEMC_LIBDIR:$LD_LIBRARY_PATH
 //export CXXFLAGS="-std=gnu++11"
 verilator -Wall -trace -sc --clk i_clk test.v --exe sc_main.cpp
