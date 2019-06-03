@@ -6,10 +6,10 @@ This clock generator is realized in SystemC as well as the testbench. The top le
 also is setting up a trace to dump a VCD-file.
 
 ## Special Notes
-* Verilator version used: 4.015
+* Verilator version used: 4.014  (stable branch from git.veripool.org)
 * SystemC built on Linux from original reference sources by accelera.org
 * There are two bash scripts, one for SystemC Version 2.2 and one for System C Version 2.3, which generate a trace dump in "trace.vcd".
-If you want to run them, don't forget to ajust the environment variables according your systemc installation.
+If you want them to run, don't forget to ajust the environment variables according your systemc installation.
 * Problem: 
 <pre>test_sc_2_2.sh  # using SystemC 2.2.0 </pre>
 properly producing a trace. You may view it with
@@ -17,3 +17,7 @@ properly producing a trace. You may view it with
 but (don't forget to delete obj_dir)
 <pre>test_sc_2_3.sh  # using SystemC 2.3.3</pre>
 also is running seamlessly, but the produced trace.vcd doesn't contain trace data!
+
+### Workaround
+Do not build SystemC 2.3.3 with cmake!
+
