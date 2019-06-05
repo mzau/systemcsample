@@ -19,5 +19,9 @@ but (don't forget to delete obj_dir)
 also is running seamlessly, but the produced trace.vcd doesn't contain trace data!
 
 ### Workaround
-Do not build SystemC 2.3.3 with cmake!
 
+Inside the systemc cmake build directory with <pre>
+make edit_cache
+</pre>
+set
+<pre>ENABLE_PHASE_CALLBACKS_TRACING = OFF</pre>
