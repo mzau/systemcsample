@@ -1,6 +1,7 @@
 module test(i_clk, i_reset, ref_clk);
 input i_clk;
 input i_reset;
+/* verilator lint_off UNUSED */
 input ref_clk;
 
 reg [3:0] a;
